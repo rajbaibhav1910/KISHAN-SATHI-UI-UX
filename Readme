@@ -1,0 +1,169 @@
+<div align="center">
+
+# 🌾 Kisan Saathi
+
+### *Turning weather forecasts into plain "should I" farm decisions*
+
+[![Domain](https://img.shields.io/badge/Domain-Agriculture-3B7A4A?style=flat-square)](#)
+[![Status](https://img.shields.io/badge/Status-Prototype-3E6D9C?style=flat-square)](#)
+[![Design Process](https://img.shields.io/badge/Process-Human--Centered%20Design-B4691F?style=flat-square)](#)
+[![License](https://img.shields.io/badge/License-MIT-6B4A2F?style=flat-square)](#)
+
+<br>
+
+*A human-centered design case study and clickable prototype, built for the*
+**Design Challenge: From Problem to Prototype**
+
+</div>
+
+<br>
+
+---
+
+<br>
+
+## 📖 Table of Contents
+
+- [The Problem](#-the-problem)
+- [The Solution](#-the-solution)
+- [Screens](#-screens)
+- [Design System](#-design-system)
+- [What's in this Repo](#-whats-in-this-repo)
+- [Try It](#-try-it)
+- [Design Process](#-design-process)
+- [Research Highlights](#-research-highlights)
+
+<br>
+
+---
+
+<br>
+
+## 🎯 The Problem
+
+> India's ~600 million agriculture-dependent population includes roughly **86% smallholder farmers** — yet despite improving forecast accuracy, no widely deployed tool actually translates a weather forecast into a specific, same-day farm decision.
+
+Farmers either don't receive forecasts in a usable form, or receive raw meteorological data — *"60% chance of rain"* — that they aren't equipped to turn into an irrigate, spray, or harvest decision on their own. The interpretation gap, not the data itself, is where the value is lost.
+
+<br>
+
+## 💡 The Solution
+
+Kisan Saathi answers the specific question a farmer actually asks — ***should I irrigate today, should I spray before the rain, should I delay harvest*** — as a plain **YES / NO / WAIT** verdict, personalized to the farmer's crop and its current growth stage, backed by a one-line reason they can verify against their own field.
+
+<div align="center">
+
+| Instead of... | Kisan Saathi shows... |
+|:---|:---|
+| "60% chance of rain, 12mm expected" | 🚫 **Skip irrigating today** — rain expected in 18 hrs |
+| "Wind 14 km/h, humidity 78%" | ✅ **Spray now** — dry window before tomorrow's rain |
+| Raw 7-day temperature grid | ⏳ **Wait 2 days to harvest** — grain moisture too high |
+
+</div>
+
+<br>
+
+## 📱 Screens
+
+<div align="center">
+
+| # | Screen | Purpose |
+|:-:|:---|:---|
+| 1 | **Onboarding** | Crop, sowing date, farm setup |
+| 2 | **Home** | Today's decision cards + active severe-weather alert |
+| 3 | **Decision Detail** | Verdict, plain-language reasoning, feedback loop |
+| 4 | **Severe Alert Detail** | Protective action for the current crop stage |
+| 5 | **Alerts List** | Active + historical severe-weather warnings |
+| 6 | **7-Day Forecast** | Icon-first day strip |
+| 7 | **My Farm** | Crop, sowing date, stage, location, water source |
+| 8 | **Track Record** | Season accuracy score, verdict history |
+
+</div>
+
+<br>
+
+## 🎨 Design System
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/Sky-3E6D9C?style=for-the-badge" height="28"/> <img src="https://img.shields.io/badge/Soil-6B4A2F?style=for-the-badge" height="28"/> <img src="https://img.shields.io/badge/Go--Green-3B7A4A?style=for-the-badge" height="28"/> <img src="https://img.shields.io/badge/Amber-B4691F?style=for-the-badge" height="28"/> <img src="https://img.shields.io/badge/Alert--Red-B23A2E?style=for-the-badge" height="28"/>
+
+</div>
+
+| Token | Value | Usage |
+|:---|:---|:---|
+| Sky | `#3E6D9C` | Weather elements, primary chrome |
+| Soil | `#6B4A2F` | Crop and field-related content |
+| Go-Green | `#3B7A4A` | "Do it today" verdicts |
+| Amber | `#B4691F` | "Wait" verdicts |
+| Alert Red | `#B23A2E` | Severe-weather banners *only* — reserved, never decorative |
+
+**Typography** — `Fraunces` for headlines · `Inter` for body/UI · `Space Mono` for numbers and data
+
+**Core principle** — the farmer should never have to interpret a raw probability. Every screen leads with a plain verdict icon; forecast detail is available only on request.
+
+<br>
+
+## 📂 What's in this Repo
+
+```
+kisan-saathi/
+├── README.md
+├── KisanSaathi_UX_Case_Study.docx     # Full research → design case study
+├── KisanSaathi_Prototype.html          # ⭐ Interactive clickable prototype
+├── KisanSaathi_AllScreens.html         # All 8 screens, side by side
+└── screens/
+    ├── KisanSaathi_1_Home.html
+    ├── KisanSaathi_2_DecisionDetail.html
+    ├── KisanSaathi_3_SevereAlertDetail.html
+    ├── KisanSaathi_4_Forecast.html
+    ├── KisanSaathi_5_MyFarm.html
+    ├── KisanSaathi_6_TrackRecord.html
+    ├── KisanSaathi_7_Onboarding.html
+    └── KisanSaathi_8_AlertsList.html
+```
+
+<br>
+
+## 🚀 Try It
+
+No build step, no dependencies — just open it in a browser.
+
+```bash
+git clone https://github.com/your-username/kisan-saathi.git
+cd kisan-saathi
+open KisanSaathi_Prototype.html
+```
+
+Tap through the bottom tab bar and decision cards to walk the full flow: **Home → Decision Detail → Alerts → Forecast → My Farm → Track Record.**
+
+<br>
+
+## 🔄 Design Process
+
+<div align="center">
+
+**Discover** → **Define** → **Ideate** → **Design** → **Prototype & Test**
+
+</div>
+
+Built following a full 5-phase Human-Centered Design process. Every phase — background research, user personas, empathy maps, journey maps, HMW statements, Crazy 8 / SCAMPER ideation, information architecture, and a usability test plan — is documented in the case study `.docx`.
+
+<br>
+
+## 🔍 Research Highlights
+
+- 🌏 **86%** of India's farmers are smallholders, out of a **600M**-strong agriculture-dependent population
+- 📈 A Telangana field study found **90%** of farmers who received usable forecasts said it improved their planting decisions
+- 🔇 Existing advisory systems (SMS, government portals) are largely **one-way** — no way for a farmer to flag a wrong call, which erodes trust fast
+- 🌾 Roughly **half** of India's cultivated area is rain-fed with no canal or borewell fallback — a missed forecast window can mean a full reseeding
+
+<br>
+
+---
+
+<div align="center">
+
+*Domain: Agriculture · Design Challenge: From Problem to Prototype*
+
+</div>
